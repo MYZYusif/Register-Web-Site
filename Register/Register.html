@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="./Register.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Register</h2>
+        <form>
+            <label for="firstName">Name:</label>
+            <input type="text" id="Name" name="Name" placeholder="Name" minlength="2" required>
+            <p class="true">True</p>
+            <p class="false">Minimum "2" Symbols</p>
+    
+            <label for="lastName">SurName:</label>
+            <input type="text" id="SurName" name="SurName" placeholder="SurName" minlength="2" required>
+            <p class="true">True</p>
+            <p class="false">Minimum "2" Symbols"</p>
+    
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Password" minlength="4" maxlength="64" required>
+            <p class="true">True</p>
+            <p class="false">Minimum "4" Symbols"
+                Maximum "64" Symbols
+            </p>
+    
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Email" required>
+            <p class="true">True</p>
+            <p class="false">****@gamil.com</p>
+    
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phoneNumber" name="phoneNumber" placeholder="Phone umber" pattern="05\d{1}-\d{3}-\d{2}-\d{2}" required>
+            <p class="true">True</p>
+            <p class="false">05*_***_**_**</p>
+    
+            <button type="submit">Register</button>
+        </form>
+    </div>
+</body>
+<script src="./Register.js"></script>
+</html>
